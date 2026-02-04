@@ -1,0 +1,76 @@
+{
+  "tasks": [
+    {
+      "id": "setup_github_pages",
+      "title": "🚀 配置 GitHub Pages 部署",
+      "description": "完成 GitHub Pages 部署配置，确保 Mission Control 界面可以正常访问。",
+      "status": "in_progress",
+      "project": "setup",
+      "tags": ["github", "deployment"],
+      "subtasks": [
+        { "id": "sub_001", "title": "1. 检查 git 配置", "done": true },
+        { "id": "sub_002", "title": "2. 创建初始提交", "done": true },
+        { "id": "sub_003", "title": "3. 创建部署工作流", "done": true },
+        { "id": "sub_004", "title": "4. 配置远程仓库", "done": false },
+        { "id": "sub_005", "title": "5. 推送到 GitHub 仓库", "done": false },
+        { "id": "sub_006", "title": "6. 启用 GitHub Pages", "done": false },
+        { "id": "sub_007", "title": "7. 测试访问", "done": false }
+      ],
+      "priority": "high",
+      "comments": [
+        {
+          "author": "LocalBot",
+          "text": "已完成基础配置，需要您提供 GitHub 仓库信息来完成剩余步骤。",
+          "timestamp": "2026-02-04T12:56:00Z"
+        }
+      ],
+      "createdAt": "2026-02-04T12:56:00Z"
+    },
+    {
+      "id": "skills_management",
+      "title": "📚 技能管理",
+      "description": "管理已安装的技能，确保它们能正常工作。",
+      "status": "backlog",
+      "project": "setup",
+      "tags": ["skills", "management"],
+      "subtasks": [
+        { "id": "sub_001", "title": "1. 检查已安装的技能", "done": false },
+        { "id": "sub_002", "title": "2. 测试技能功能", "done": false },
+        { "id": "sub_003", "title": "3. 整理技能文档", "done": false },
+        { "id": "sub_004", "title": "4. 创建技能使用指南", "done": false }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-02-04T12:56:00Z"
+    },
+    {
+      "id": "mission_control_config",
+      "title": "🎛️ 任务控制配置",
+      "description": "配置 Mission Control 的任务管理功能。",
+      "status": "backlog",
+      "project": "setup",
+      "tags": ["configuration", "task-management"],
+      "subtasks": [
+        { "id": "sub_001", "title": "1. 创建任务控制配置文件", "done": false },
+        { "id": "sub_002", "title": "2. 配置 webhook 集成", "done": false },
+        { "id": "sub_003", "title": "3. 测试任务管理功能", "done": false },
+        { "id": "sub_004", "title": "4. 创建任务模板", "done": false }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-02-04T12:56:00Z"
+    }
+  ],
+  "projects": [
+    { "id": "setup", "name": "设置", "color": "#10b981", "icon": "🔧" },
+    { "id": "development", "name": "开发", "color": "#3b82f6", "icon": "💻" },
+    { "id": "maintenance", "name": "维护", "color": "#f59e0b", "icon": "🔄" },
+    { "id": "documentation", "name": "文档", "color": "#8b5cf6", "icon": "📖" }
+  ],
+  "activities": [
+    { "type": "created", "actor": "LocalBot", "task": "配置 GitHub Pages 部署", "time": "刚刚" },
+    { "type": "created", "actor": "LocalBot", "task": "技能管理", "time": "刚刚" },
+    { "type": "created", "actor": "LocalBot", "task": "任务控制配置", "time": "刚刚" }
+  ],
+  "lastUpdated": "2026-02-04T12:56:00Z"
+}

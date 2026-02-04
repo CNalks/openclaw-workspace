@@ -1,0 +1,52 @@
+name: Deploy to GitHub Pages
+
+on:
+  # 当有新提交到 main 分支时触发
+  push:
+    branches: [ "master" ]
+  # 允许手动触发部署
+  workflow_dispatch:
+
+# 权限配置
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 环境配置
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # 构建和部署工作
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 检出代码
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. 配置 Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # 3. 构建静态网站
+      - name: Build static site
+        run: |
+          # 确保数据目录存在
+          mkdir -p data
+          # 复制任务数据
+          cp -r skills/mission-control/assets/* .
+          # 确保任务数据文件存在
+          if [ ! -f data/tasks.json ]; then
+              cp skills/mission-control/assets/data/tasks.json data/tasks.json
+          fi
+
+      # 4. 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          # 部署当前目录（包含 index.html）
+          folder: .
