@@ -150,7 +150,7 @@
       "id": "mission_control_config",
       "title": "🎛️ 任务控制配置",
       "description": "配置 Mission Control 的任务管理功能。",
-      "status": "in_progress",
+      "status": "done",
       "project": "setup",
       "tags": [
         "configuration",
