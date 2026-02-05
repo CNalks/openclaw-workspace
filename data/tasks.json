@@ -114,7 +114,7 @@
       "id": "skills_management",
       "title": "📚 技能管理",
       "description": "管理已安装的技能，确保它们能正常工作。",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "setup",
       "tags": [
         "skills",
