@@ -124,7 +124,7 @@
         {
           "id": "sub_001",
           "title": "1. 检查已安装的技能",
-          "done": false
+          "done": true
         },
         {
           "id": "sub_002",
