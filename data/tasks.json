@@ -57,7 +57,7 @@
       "id": "setup_github_pages",
       "title": "🚀 配置 GitHub Pages 部署",
       "description": "完成 GitHub Pages 部署配置，确保 Mission Control 界面可以正常访问。",
-      "status": "in_progress",
+      "status": "done",
       "project": "setup",
       "tags": [
         "github",
